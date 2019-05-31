@@ -21,6 +21,7 @@ mosaico = mosaico100x100(img, entrada_new)
 mosaico = cv2.resize(mosaico, (800,800))
 
 out = np.hstack([entrada, mosaico])
-
+cv2.imwrite("kokonete.jpg",mosaico)
 cv2.imshow("Entrada     //     Mosaico", out)
 cv2.waitKey(0)
+
